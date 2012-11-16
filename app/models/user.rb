@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessor :captcha
 
-  BASE_FIELDS = [:nickname, :email, :password, :password_confirmation,
+  BASE_FIELDS = [:nickname, :email, :password,
     :remember_me, :avatar, :account_attributes, :captcha
   ]
 

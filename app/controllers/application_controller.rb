@@ -70,6 +70,15 @@ class ApplicationController < ActionController::Base
 
     @seo_description = ''
     ActionMailer::Base.default_url_options[:host] = Settings.canonical_host
+
+    if params[:lang].present?
+      cookies[:lang] = params[:lang]
+      I18n.locale = cookies[:lang]
+    elsif cookies[:lang].present?
+      I18n.locale = cookies[:lang]
+    else
+      I18n.locale = I18n.default_locale
+    end
   end
 
   def initialize_breadcrumbs_and_title

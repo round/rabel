@@ -1,6 +1,7 @@
 #footer
   .container#footer-main
     .page-links
+      = render 'shared/languages', :languages => Settings.languages
       = render :partial => 'pages/nav', :collection => Page.only_published.default_order, :spacer_template => 'pages/nav_ruler'
     .copywrite
       = Siteconf.footer.html_safe

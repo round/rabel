@@ -1,0 +1,5 @@
+en:
+  devise:
+    registrations:
+      form:
+        sign_up_for: 'Sign up for %{site_name}'

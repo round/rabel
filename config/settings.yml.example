@@ -1,6 +1,8 @@
+# NOTE: please restart app server if you change the settings here
 default: &default
   canonical_host: "www.example.com"
-  system_email: "no-reply@example.com"
+  system_email: "no-reply@example.com" # site email address, e.g. "no-reply@douban.com"
+  lang: 'zh' # available options: 'zh', 'en'
   memcached:
     servers: ["127.0.0.1:11211"]
     namespace: "example"

@@ -1,0 +1,5 @@
+zh:
+  devise:
+    registrations:
+      form:
+        sign_up_for: '注册成为 %{site_name} 会员'
