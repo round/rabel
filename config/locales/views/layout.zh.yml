@@ -1,7 +1,12 @@
 zh:
-  homepage: '首页'
-  sign_in: '登入'
-  sign_up: '注册'
-  sign_out: '退出'
-  search: '搜索话题'
-  dashboard: '管理后台'
+  homepage: 首页
+  sign_in: 登入
+  sign_up: 注册
+  sign_out: 退出
+  search: 搜索话题
+  dashboard: 管理后台
+  settings: 个人设置
+  remember_me_for_a_year: 登录后 cookie 会被记住一年
+  forgot_password: 找回登录密码
+  reset_password: 重新设置密码
+  password_reset_limits: 24 小时内，至多可以重新设置密码 2 次。

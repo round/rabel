@@ -1,4 +1,4 @@
 .pull-right
   %i.icon-globe
   &nbsp;
-  = Settings.languages.map {|lang, name| link_to name, "?lang=#{lang}", :class => 'dark nav'}.join(render('pages/nav_ruler')).html_safe
+  = Settings.languages.map {|lang, name| link_to name, "?lang=#{lang}", :class => 'dark'}.join(render('pages/nav_ruler')).html_safe

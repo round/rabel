@@ -10,12 +10,10 @@ describe "User features" do
       page.should have_content('用户名')
       page.should have_content('电子邮件')
       page.should have_content('密码')
-      page.should have_content('密码确认')
 
       fill_in "user[nickname]", :with => 'foobar'
       fill_in "user[email]", :with => 'hi@gmail.com'
       fill_in "user[password]", :with => '123456'
-      fill_in "user[password_confirmation]", :with => '123456'
 
       expect {
         click_button '注册'
